@@ -1,4 +1,4 @@
-$(window).on("load", function () {
+/*$(window).on("load", function () {
     swal({
         icon: "info",
         title: "Entwicklung",
@@ -7,4 +7,4 @@ $(window).on("load", function () {
             okay: "Okay"
         }
     });
-});
+});*/
