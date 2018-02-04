@@ -30,13 +30,15 @@ section#main {
 .button {
     background: none;
 
-    color: white;
+    color: #c1c1c1;
 
-    font-size: 5px;
-    border: solid 0.5px;
-    padding: 5px;
+    font-size: 30px;
+    border: solid 2px;
+    padding: 15px 25px 15px 25px;
 
-    width: 50px;
+    width: 200px;
+
+    margin: 10px 0;
 
     -webkit-animation: buttonAnimation 14s ease-in-out infinite;
     -o-animation: buttonAnimation 14s ease-in-out infinite;
@@ -55,18 +57,22 @@ section#main {
 @keyframes buttonAnimation {
     0%, 100% {
         border-color: #a82f2c;
+        color: #a82f2c;
     }
 
     25% {
         border-color: #008000;
+        color: #008000;
     }
 
     50% {
         border-color: rgba(0, 0, 170, 0.8);
+        color: rgba(0, 0, 170, 0.8);
     }
 
     75% {
         border-color: #b200b2;
+        color: #b200b2;
     }
 
 }
