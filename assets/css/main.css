@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: Beech;
-    src: local("beech");
+    src: url('../fonts/beech.ttf');
 }
 
 * {
