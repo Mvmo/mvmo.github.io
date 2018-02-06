@@ -5,6 +5,12 @@
     src: url('../fonts/beech.ttf');
 }
 
+#bouncing-ball {
+    position: absolute;
+    top: 0;
+    z-index: inherit;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -92,6 +98,12 @@ aside#side-bar {
     height: 125px;
 }
 
+.animate-sidebar {
+    -webkit-animation: blend-in-sidebar 2s infinite ease-in-out;
+    -o-animation: blend-in-sidebar 2s infinite ease-in-out;
+    animation: blend-in-sidebar 2s infinite ease-in-out;
+}
+
 aside#side-bar > img {
     position: absolute;
     -webkit-animation: sidebar-logo-animation 5s infinite ease-in-out;
@@ -162,7 +174,23 @@ aside#side-bar #sidebar-icons i:hover {
 
 @keyframes blend-in-sidebar {
     0% {
+        right: 100%;
+        top: 0;
+    }
 
+    50% {
+        right: 50%;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    100% {
+        top: 50%;
+        right: 0;
     }
 }
 
