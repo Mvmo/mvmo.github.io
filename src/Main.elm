@@ -31,7 +31,7 @@ update message model = model
 viewSocialLink: Social -> Html Message
 viewSocialLink social =
     div [] 
-        [ a [href social.link] [ i [class social.icon] [] ]
+        [ a [ href social.link ] [ i [ class social.icon ] [] ]
         ]
 
 viewSocialLinks: Model -> Html Message
@@ -42,8 +42,9 @@ viewSocialLinks model =
 
 view: Model -> Html Message
 view model =
-    div [] [
-        viewSocialLinks model
+    div [ id "main" ] 
+    [ h1 [] [ text "Maurice Schmidt" ]
+    , viewSocialLinks model
     ]
 
 main: Program () Model Message
