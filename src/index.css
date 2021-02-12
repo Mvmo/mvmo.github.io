@@ -1,13 +1,57 @@
-@tailwind base;
+/*@tailwind base;
 
 @tailwind components;
 
-@tailwind utilities;
+@tailwind utilities;*/
 
-#main {
-    background-color: gray;
+:root {
+    --dark: #4B4B4B;
+    --darker: #3C3C3C;
+}
 
-    .main {
-        
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #00cba9;
+}
+
+header {
+    background-color: var(--dark);
+    display: none;
+    ul {
+        width: 100vw;
+        text-align: center;
+        margin: 0 auto;
+        list-style: none;
+        li {
+            display: inline-block;
+            background-color: var(--darker);
+            padding: 8.5px 15px;
+        }
     }
+}
+
+#myself {
+    text-align: center;
+    height: 100vh;
+    background-color: white;
+
+    & .top {
+        & .waves {
+            top: 100%;
+            & :nth-child(2) {
+                transform: translateY(-100%);
+            }
+        }
+    }
+
+    & .bottom {
+        background-color: #00cba9;
+        height: 100%;
+    }
+
 }
