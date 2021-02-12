@@ -27,6 +27,8 @@
     "tailwindcss": "^2.0.3"
   },
   "dependencies": {
-    "@snowpack/plugin-build-script": "^2.1.0"
+    "@snowpack/plugin-build-script": "^2.1.0",
+    "postcss-import": "^14.0.0",
+    "postcss-nested": "^5.0.3"
   }
 }
